@@ -114,3 +114,6 @@ ENV/
 
 # IDE settings
 .vscode/
+
+
+ds_template-env/
