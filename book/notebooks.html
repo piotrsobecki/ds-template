@@ -469,7 +469,7 @@ plt.ion()
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;contextlib.ExitStack at 0x7f20a51cafa0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.pyplot._IonContext at 0x1c8cce3a580&gt;
 </pre></div>
 </div>
 </div>
@@ -502,6 +502,20 @@ ax.legend(custom_lines, [&#39;Cold&#39;, &#39;Medium&#39;, &#39;Hot&#39;]);
 </div>
 <div class="cell_output docutils container">
 <img alt="../_images/notebooks_2_0.png" src="../_images/notebooks_2_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Random plotly plot to show how to embed in notebook 
+import plotly.graph_objects as go
+
+fig = go.Figure(data=go.Scatter(x=[1, 2, 3], y=[4, 1, 2]))
+
+fig.show()
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
 </div>
 </div>
 <p>There is a lot more that you can do with outputs (such as including interactive outputs)
